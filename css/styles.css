@@ -1,0 +1,441 @@
+/*переменние*/
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+}
+/*----------------------------------------------------------*/
+/*======  INDEX  ======*/
+/*----------------------------------------------------------*/
+/*======  MAIN  ======*/
+/*обнуление паддингов и маржинов*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+/*общие стили*/
+.body {
+  font-family: var(--main-font-family);
+  letter-spacing: 0.03em;
+  width: 1600px;
+  margin: 0 auto;
+}
+/*скриваю точки списка + сбрасиваю маржини списков*/
+.list {
+  list-style: none;
+}
+/*нижнее подчеркивание ссилок*/
+.link {
+  text-decoration: none;
+}
+/*текущая страница*/
+.nav-list-link.current {
+  color: var(--accent-color);
+}
+
+/*центрирование контента*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  /*outline: 2px solid tomato;*/
+}
+/*отступ картинок*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.flexbox {
+  display: flex;
+}
+/*все ссилки блочние елементи
+a {
+  display: block;
+}*/
+/*скривание заголовков*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+/*======  END MAIN  ======*/
+/*----------------------------------------------------------*/
+/*======  HEADER  ======*/
+/*линия*/
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+/*правий отступ для елементов списков*/
+.nav-list-item:not(:last-child),
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+/*Стилизация логотипа*/
+/*Логотип шрифт цвет*/
+.logo {
+  margin-right: 93px;
+
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+
+  color: #2196f3;
+}
+/*Цвет для текста логотипа в шапке*/
+.logo-text {
+  color: #000000;
+}
+/*общие стили*/
+.nav-list-link,
+.header-contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+/*цвет текста контактов*/
+.header-contact-link {
+  color: var(--secondary-text-color);
+}
+/*активное состояние елементов*/
+.nav-list-link:hover,
+.header-contact-link:hover,
+.nav-list-link:focus,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+/*создание флеx-контейнера навигации + правий маржин*/
+.nav {
+  align-items: center;
+  margin-right: auto;
+}
+/*======  END HEADER  ======*/
+/*----------------------------------------------------------*/
+/*======  MAIN  ======*/
+/*----------------------------------------------------------*/
+/*======  HERO  ======*/
+/*Фон Героя + падинги + виравнивание текста*/
+.hero {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+/*Заголовок Hero*/
+.hero-title {
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+/*Кнопка Hero*/
+.hero-button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  min-width: 200px;
+
+  padding: 10px 32px;
+
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/*======  END HERO  ======*/
+/*----------------------------------------------------------*/
+/*======  FEATURES  ======*/
+/*Фон + паддинги секции */
+.features {
+  background-color: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+/*ширина елементов списка*/
+.features-list-item {
+  max-width: 270px;
+}
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+/*заголовок*/
+.features-list-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+}
+/*текст*/
+.features-list-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+
+  color: var(--secondary-text-color);
+}
+/*======  END FEATURES  ======*/
+/*----------------------------------------------------------*/
+/*======  WORK  ======*/
+/*Фон секции чем ми занимаeмся + паддинги секции*/
+.work {
+  background-color: #ffffff;
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+/*заголовок*/
+.work-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+/* маржини елементов списка*/
+.work-list-item {
+  margin: 15px;
+  max-width: calc((100% - 30px * 3) / 3);
+}
+/*маржини списка*/
+.work-list {
+  margin: -15px;
+}
+/*======  END WORK  ======*/
+/*----------------------------------------------------------*/
+/*======  TEAM  ======*/
+/*общие стили*/
+/*фон + падинги секции*/
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  margin: -15px;
+}
+
+.team-list-item {
+  margin: 15px;
+  max-width: calc((100% - 4 * 30px) / 4);
+}
+
+/*нижний паддинг + фон + бордер описание елементов списка*/
+.team-list-description {
+  padding: 30px 0;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/*правий маржин елементов списка
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}*/
+/*заголовок секции*/
+.team-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+/*общие стили + цвет текста заголовка команди*/
+.team-list-title,
+.team-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+/*заголовок команди*/
+.team-list-title {
+  margin-bottom: 10px;
+}
+/* текст команди*/
+.team-list-text {
+  color: var(--secondary-text-color);
+}
+/*======  END TEAM  ======*/
+/*----------------------------------------------------------*/
+/*======  END MAIN  ======*/
+/*----------------------------------------------------------*/
+/*======  FOOTER  ======*/
+/*Фон футера+паддинг  секции*/
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/*паддинги + нижний маржин логотипа*/
+.footer .logo {
+  display: block;
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+/*нижний маржин елементов адреса*/
+.address-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+/*текст тега адрес*/
+.address {
+  font-style: normal;
+}
+/*общие стили*/
+.address-map,
+.address-list-link {
+  font-size: 14px;
+  line-height: 1.714;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+/*цвет для адреса с указанием места*/
+.address-map {
+  color: #ffffff;
+}
+/*Цвет для текста логотипа в футере*/
+.footer .logo-text {
+  color: #ffffff;
+}
+/*активное состояние елементов*/
+.address-map:hover,
+.address-list-link:hover,
+.address-map:focus,
+.address-list-link:focus {
+  color: var(--accent-color);
+}
+/*======  END FOOTER  ======*/
+
+/*----------------------------------------------------------*/
+
+/*======  PORTFOLIO  ======*/
+/*фон + паддинги секции**/
+.portfolio {
+  background-color: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/*правий маржин кнопок фильтров*/
+.portfolio-filter:not(:last-child) {
+  margin-right: 8px;
+}
+/*виравнивание кнопок фильтров*/
+.portfolio-filter-list {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+/*стилизация кнопок фильтров*/
+.portfolio-filter-btn {
+  display: inline-block;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+
+  text-align: center;
+
+  background-color: #f5f4fa;
+  color: var(--primary-text-color);
+}
+/*активное состояние кнопок фильтра*/
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+/*ширина + паддинг + маржин елементов списка*/
+.portfolio-project-item {
+  margin: 15px;
+  max-width: calc((100% - 3 * 30px) / 3);
+}
+/*тип елемента + нижний маржин картинки
+.portfolio-project-img {
+  display: block;
+}*/
+/*стилизация заголовков проектов*/
+.portfolio-project-title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text-color);
+}
+/*стилизация текcтов проектов*/
+.portfolio-project-text {
+  font-size: 16px;
+  line-height: 1.875;
+
+  color: var(--secondary-text-color);
+}
+/*внутренние отступи описания проектов*/
+.portfolio-project-description {
+  padding: 20px 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+/*виравнивание елементов списка*/
+.portfolio-project {
+  flex-wrap: wrap;
+  margin: -15px;
+}
+/*======  END PORTFOLIO  ======*/
