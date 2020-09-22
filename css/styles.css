@@ -309,7 +309,7 @@ a {
   color: var(--secondary-text-color);
 }
 /*виравнивание ссилок соцсетей + геометрия*/
-.social-item {
+.social-link {
   display: inline-flex;
 
   width: 44px;
@@ -325,10 +325,6 @@ a {
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
-/*цвет ссилкам соцсетей*/
-.social-link {
-  color: currentColor;
-}
 /*цвет иконок соцсетей*/
 .social-icon {
   widows: 20px;
@@ -336,14 +332,57 @@ a {
   fill: currentColor;
 }
 /*активное состояние соцсетей*/
-.social-item:hover,
-.social-item:focus {
+.social-link:hover,
+.social-link:focus {
+  outline: none;
   color: #ffffff;
   background-color: var(--accent-color);
 }
 /*======  END TEAM  ======*/
 /*----------------------------------------------------------*/
-/*======  END MAIN  ======*/
+/*======  PARTNERS  ======*/
+.partners {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+.partners-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+
+  color: var(--primary-text-color);
+}
+.partners-item {
+  display: inline-flex;
+}
+
+.partners-item:not(:last-child) {
+  margin-right: 30px;
+}
+.partners-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--icon-color);
+}
+.partners-icon {
+  fill: currentColor;
+}
+.partners-link:hover,
+.partners-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  outline: none;
+}
+/* #afb1b8*/
+/*======  END PARTNERS ======*/
 /*----------------------------------------------------------*/
 /*======  FOOTER  ======*/
 /*Фон футера+паддинг  секции*/
@@ -389,6 +428,40 @@ a {
 .address-map:focus,
 .address-list-link:focus {
   color: var(--accent-color);
+}
+/*размери + отступи контактов*/
+.footer-contact {
+  max-width: 231px;
+  margin-right: 70px;
+}
+/*блок присоединяйтесь*/
+.footer-join {
+  padding-top: 12px;
+}
+.join {
+  display: inline-flex;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+/**/
+.footer .social-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+/**/
+.footer .social-link:hover,
+.footer .social-link:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/**/
+.footer .container {
+  flex-direction: baseline;
 }
 /*======  END FOOTER  ======*/
 
