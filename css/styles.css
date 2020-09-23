@@ -22,7 +22,7 @@
 .body {
   font-family: var(--main-font-family);
   letter-spacing: 0.03em;
-  width: 1600px;
+  /* width: 1600px;*/
   margin: 0 auto;
 }
 /*скриваю точки списка + сбрасиваю маржини списков*/
@@ -55,10 +55,6 @@ img {
 .flexbox {
   display: flex;
 }
-/*все ссилки блочние елементи
-a {
-  display: block;
-}*/
 /*скривание заголовков*/
 .visually-hidden {
   position: absolute;
@@ -102,7 +98,7 @@ a {
 /*общие стили*/
 .nav-list-link,
 .header-contact-link {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -116,6 +112,11 @@ a {
 /*цвет текста контактов*/
 .header-contact-link {
   color: var(--secondary-text-color);
+}
+/*правий отступ + цветclients*/
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 /*активное состояние елементов*/
 .nav-list-link:hover,
@@ -140,6 +141,10 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
 }
 
 /*Заголовок Hero*/
@@ -327,8 +332,6 @@ a {
 }
 /*цвет иконок соцсетей*/
 .social-icon {
-  widows: 20px;
-  height: 20px;
   fill: currentColor;
 }
 /*активное состояние соцсетей*/
@@ -341,12 +344,12 @@ a {
 /*======  END TEAM  ======*/
 /*----------------------------------------------------------*/
 /*======  PARTNERS  ======*/
-.partners {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
 }
-.partners-title {
+.clients-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -355,14 +358,14 @@ a {
 
   color: var(--primary-text-color);
 }
-.partners-item {
+.clients-item {
   display: inline-flex;
 }
 
-.partners-item:not(:last-child) {
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
-.partners-link {
+.clients-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -372,11 +375,11 @@ a {
   border-radius: 4px;
   color: var(--icon-color);
 }
-.partners-icon {
+.clients-icon {
   fill: currentColor;
 }
-.partners-link:hover,
-.partners-link:focus {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
   outline: none;
@@ -546,5 +549,9 @@ a {
 .portfolio-project {
   flex-wrap: wrap;
   margin: -15px;
+}
+/*ефект тени при ховере по карточке*/
+.portfolio-project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*======  END PORTFOLIO  ======*/
