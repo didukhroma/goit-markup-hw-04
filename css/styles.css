@@ -220,6 +220,21 @@ img {
 
   color: var(--secondary-text-color);
 }
+.features-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
 /*======  END FEATURES  ======*/
 /*----------------------------------------------------------*/
 /*======  WORK  ======*/
@@ -441,6 +456,7 @@ img {
 .footer-join {
   padding-top: 12px;
 }
+/*стили присоединяйся*/
 .join {
   display: inline-flex;
   margin-bottom: 20px;
@@ -451,18 +467,18 @@ img {
 
   color: #ffffff;
 }
-/**/
+/*цвет иконок соцсетей */
 .footer .social-link {
+  color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 }
-/**/
+/*активное состояние иконов соцсетей */
 .footer .social-link:hover,
 .footer .social-link:focus {
   outline: none;
-  color: #ffffff;
   background-color: var(--accent-color);
 }
-/**/
+/*виравнивание */
 .footer .container {
   flex-direction: baseline;
 }
