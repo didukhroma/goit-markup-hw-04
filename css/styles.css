@@ -89,7 +89,7 @@ img {
   font-size: 26px;
   line-height: 1.192;
 
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /*Цвет для текста логотипа в шапке*/
 .logo-text {
@@ -113,7 +113,7 @@ img {
 .header-contact-link {
   color: var(--secondary-text-color);
 }
-/*правий отступ + цветclients*/
+/*правий отступ + цвет иконок*/
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
@@ -125,7 +125,7 @@ img {
 .header-contact-link:focus {
   color: var(--accent-color);
 }
-/*создание флеx-контейнера навигации + правий маржин*/
+/*создание виравнивание навигации + правий маржин*/
 .nav {
   align-items: center;
   margin-right: auto;
@@ -137,12 +137,14 @@ img {
 /*======  HERO  ======*/
 /*Фон Героя + падинги + виравнивание текста*/
 .hero {
-  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+
   text-align: center;
+
+  background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
-  background-position: 50% 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 1600px 600px;
 }
@@ -164,7 +166,7 @@ img {
 }
 /*Кнопка Hero*/
 .hero-button {
-  display: inline-block;
+  display: inline-flex;
   border: 1px solid transparent;
   border-radius: 4px;
 
@@ -194,8 +196,9 @@ img {
 }
 /*ширина елементов списка*/
 .features-list-item {
-  max-width: 270px;
+  max-width: calc((100%-60px) / 3);
 }
+/*правий отступ елементов списка*/
 .features-list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -220,6 +223,7 @@ img {
 
   color: var(--secondary-text-color);
 }
+/*контейнер иконок*/
 .features-pic {
   display: flex;
   justify-content: center;
@@ -231,6 +235,7 @@ img {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+/*общие размери для всех иконок*/
 .features-icon {
   width: 70px;
   height: 70px;
@@ -274,10 +279,11 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/*маржин списка*/
 .team-list {
   margin: -15px;
 }
-
+/*ширина маржин тень елементов списка*/
 .team-list-item {
   margin: 15px;
   max-width: calc((100% - 4 * 30px) / 4);
@@ -295,10 +301,6 @@ img {
   background-color: #ffffff;
   border-radius: inherit;
 }
-/*правий маржин елементов списка
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
-}*/
 /*заголовок секции*/
 .team-title {
   margin-bottom: 50px;
@@ -359,11 +361,13 @@ img {
 /*======  END TEAM  ======*/
 /*----------------------------------------------------------*/
 /*======  PARTNERS  ======*/
+/*стили секции*/
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
 }
+/*заголовок секции*/
 .clients-title {
   margin-bottom: 50px;
 
@@ -373,13 +377,15 @@ img {
 
   color: var(--primary-text-color);
 }
+/*виравнивание елементов списка*/
 .clients-item {
   display: inline-flex;
 }
-
+/*правий маржин*/
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
+/*стили для ссилок клиентов*/
 .clients-link {
   display: inline-flex;
   justify-content: center;
@@ -390,16 +396,17 @@ img {
   border-radius: 4px;
   color: var(--icon-color);
 }
+/*цвет иконок*/
 .clients-icon {
   fill: currentColor;
 }
+/*активное состояние */
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
   outline: none;
 }
-/* #afb1b8*/
 /*======  END PARTNERS ======*/
 /*----------------------------------------------------------*/
 /*======  FOOTER  ======*/
@@ -530,10 +537,6 @@ img {
   margin: 15px;
   max-width: calc((100% - 3 * 30px) / 3);
 }
-/*тип елемента + нижний маржин картинки
-.portfolio-project-img {
-  display: block;
-}*/
 /*стилизация заголовков проектов*/
 .portfolio-project-title {
   margin-bottom: 4px;
