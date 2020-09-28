@@ -466,10 +466,6 @@ img {
   max-width: 231px;
   margin-right: 70px;
 }
-/*блок присоединяйтесь*/
-.footer-join {
-  padding-top: 12px;
-}
 /*стили присоединяйся*/
 .join {
   display: inline-flex;
@@ -494,7 +490,7 @@ img {
 }
 /*виравнивание */
 .footer .container {
-  flex-direction: baseline;
+  align-items: baseline;
 }
 /*======  END FOOTER  ======*/
 
