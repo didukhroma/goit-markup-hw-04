@@ -17,6 +17,7 @@
 *::after {
   padding: 0;
   margin: 0;
+  /*outline: 1px solid tomato;*/
 }
 /*общие стили*/
 .body {
@@ -52,6 +53,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*флекс контейнер*/
 .flexbox {
   display: flex;
 }
@@ -366,7 +368,7 @@ img {
 }
 /*======  END TEAM  ======*/
 /*----------------------------------------------------------*/
-/*======  PARTNERS  ======*/
+/*======  CLIENTS  ======*/
 /*стили секции*/
 .clients {
   padding-top: 94px;
@@ -382,10 +384,6 @@ img {
   line-height: 1.167;
 
   color: var(--primary-text-color);
-}
-/*виравнивание елементов списка*/
-.clients-item {
-  display: inline-flex;
 }
 /*правий маржин*/
 .clients-item:not(:last-child) {
@@ -413,7 +411,7 @@ img {
   border-color: var(--accent-color);
   outline: none;
 }
-/*======  END PARTNERS ======*/
+/*======  END CLIENTS ======*/
 /*----------------------------------------------------------*/
 /*======  FOOTER  ======*/
 /*Фон футера+паддинг  секции*/
@@ -573,9 +571,20 @@ img {
   flex-wrap: wrap;
   margin: -15px;
 }
-/*ефект тени при ховере по карточке*/
+/*блочний елемент ссилка*/
+.portfolio-project-link {
+  display: block;
+}
+/*ефект тени при ховере и фокусе по карточке*/
+.portfolio-project-link:hover,
+.portfolio-project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  outline: none;
+}
+/*ефект тени при ховере по карточке
 .portfolio-project-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
-}
+}*/
 /*======  END PORTFOLIO  ======*/
