@@ -28,7 +28,6 @@
   --desktop-width: 1158px;
   --container-padding: 15px;
   /* card-set */
-  --list-gap: 24px;
   --indent-col: 24px;
   --indent-row: 24px;
   --items: 4;
@@ -227,7 +226,21 @@ h3 {
 .contacts-list-link:not(:last-child):focus {
   color: var(--pressed-state-color);
 }
-
+/* CURRENT PAGE */
+.current {
+  position: relative;
+  color: var(--pressed-state-color);
+}
+.current::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--pressed-state-color);
+}
 /**
   |============================
   | HEADER END
