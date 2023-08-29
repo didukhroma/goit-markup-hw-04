@@ -93,12 +93,6 @@ body {
 .section {
   padding: 120px 0;
 }
-/* h1-h3 */
-h1,
-h2,
-h3 {
-  text-transform: capitalize;
-}
 
 /* h2-index */
 .title {
@@ -107,6 +101,7 @@ h3 {
   color: var(--dark-color);
   letter-spacing: var(--letter-spacing);
   text-align: center;
+  text-transform: capitalize;
 }
 /* h3-index
    h2-portfolio */
@@ -117,6 +112,7 @@ h3 {
   line-height: 1.2;
   color: var(--dark-color);
   letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
 }
 /* BUTTON */
 .button {
@@ -340,6 +336,10 @@ h3 {
 .social-list-link:focus {
   background-color: var(--pressed-state-color);
 }
+.social-list-icon {
+  width: 16px;
+  height: 16px;
+}
 /* ------------------------------------------------------------------------------------------------- */
 /* CUSTOMERS */
 .customers-list {
@@ -377,13 +377,31 @@ h3 {
   padding: 100px 0;
   background-color: var(--dark-color);
 }
-.footer .site-logo {
+.footer-container {
+  display: flex;
+}
+.footer-description-wrapper {
+  margin-right: 120px;
+}
+.footer-logo {
   margin-bottom: 16px;
 }
-
 .footer-description {
   max-width: 264px;
   color: var(--light-color);
+}
+.footer-subtitle {
+  color: var(--white-color);
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.footer .social-list-link:hover,
+.footer .social-list-link:focus {
+  background-color: var(--success-color);
+}
+.footer .social-list-icon {
+  width: 24px;
+  height: 24px;
 }
 /**
   |============================
