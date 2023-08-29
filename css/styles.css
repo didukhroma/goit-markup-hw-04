@@ -340,6 +340,29 @@ h3 {
 .social-list-link:focus {
   background-color: var(--pressed-state-color);
 }
+/* ------------------------------------------------------------------------------------------------- */
+/* CUSTOMERS */
+.customers-list {
+  --items: 6;
+}
+.customers-title {
+  margin-bottom: 72px;
+}
+.customes-link {
+  color: var(--subtle-text-color);
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  padding: 16px 0;
+}
+.customes-link:hover,
+.customes-link:focus {
+  color: var(--pressed-state-color);
+}
+.customers-icon {
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
+}
 /**
   |============================
   | MAIN END
