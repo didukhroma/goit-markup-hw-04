@@ -285,7 +285,14 @@ h3 {
 
 /* ------------------------------------------------------------------------------------------------- */
 /* FEATURES */
-
+.features-list-wrapper {
+  min-height: 112px;
+  background-color: var(--light-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.features-list-icon {
+}
 /* ------------------------------------------------------------------------------------------------- */
 /* SERVICES */
 .services {
