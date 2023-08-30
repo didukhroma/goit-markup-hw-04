@@ -271,12 +271,16 @@ body {
 .hero {
   padding: 188px 0;
   max-width: 1440px;
+  margin: 0 auto;
   text-align: center;
   background: linear-gradient(
       var(--hero-background-color),
       var(--hero-background-color)
     ),
     url(../images/hero/hero-bg.jpg) center / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   max-width: 496px;
@@ -307,10 +311,7 @@ body {
   border-radius: 4px;
   margin-bottom: 8px;
 }
-.features-list-icon {
-  width: 64px;
-  height: 64px;
-}
+
 /* ------------------------------------------------------------------------------------------------- */
 /* SERVICES */
 .services {
@@ -360,10 +361,7 @@ body {
 .social-list-link:focus {
   background-color: var(--pressed-state-color);
 }
-.social-list-icon {
-  width: 16px;
-  height: 16px;
-}
+
 /* ------------------------------------------------------------------------------------------------- */
 /* CUSTOMERS */
 .customers-list {
