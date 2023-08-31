@@ -476,17 +476,20 @@ body {
   border-radius: 50%;
   background-color: var(--accent-color);
   cursor: pointer;
-  fill: currentColor;
 
   transition: border var(--transition-time) var(--transition-timing-function),
-    color var(--transition-time) var(--transition-timing-function),
-    background-color var(--transition-time) var(--transition-timing-function);
+    /* color var(--transition-time) var(--transition-timing-function), */
+      background-color var(--transition-time) var(--transition-timing-function);
 }
 .backdrop-button:hover,
 .backdrop-button:focus {
   color: var(--white-color);
   background-color: var(--pressed-state-color);
   border: none;
+}
+.backdrop-icon {
+  fill: currentColor;
+  transition: fill var(--transition-time) var(--transition-timing-function);
 }
 
 /**
