@@ -407,6 +407,7 @@ body {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-description-wrapper {
   margin-right: 120px;
