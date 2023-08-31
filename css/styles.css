@@ -431,7 +431,9 @@ body {
   color: var(--white-color);
 }
 .footer-social-list {
+  --indent-col: 16px;
   --indent-row: 16px;
+  padding: 0;
 }
 .footer-social-list .social-list-link:hover,
 .footer-social-list .social-list-link:focus {
