@@ -463,6 +463,8 @@ body {
 
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+  transition: transform var(--transition-time) var(--transition-timing-function);
 }
 .backdrop-button {
   position: absolute;
@@ -477,6 +479,7 @@ body {
   fill: currentColor;
 
   transition: border var(--transition-time) var(--transition-timing-function),
+    color var(--transition-time) var(--transition-timing-function),
     background-color var(--transition-time) var(--transition-timing-function);
 }
 .backdrop-button:hover,
@@ -525,8 +528,8 @@ body {
 .filters-button:focus {
   color: var(--white-color);
   border-color: transparent;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /* ------------------------------------------------------------------------------------------------- */
 /* PROJECTS */
@@ -568,8 +571,8 @@ body {
   transform: translate(0, 100%);
   transition: transform var(--transition-time) var(--transition-timing-function);
 }
-.projects-list-item:hover .projects-picture-description,
-.projects-list-item:focus .projects-picture-description {
+.projects-list-link:hover .projects-picture-description,
+.projects-list-link:focus .projects-picture-description {
   transform: translate(0, 0);
 }
 /**
